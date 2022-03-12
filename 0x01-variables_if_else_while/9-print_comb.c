@@ -1,25 +1,25 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 /**
- * main - represent Entry Point to the program
+ * main - Entry point
  *
- * Return: 0 to stop the program
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-unsigned char a = '0';
-int i;
+	int d;
 
-for (i = 0; i < 10; i++)
-{
-putchar(a);
-a++;
-}
-a = '1';
-for (i = 0; i < 6; i++)
-{
-putchar('0' + a);
-a++;
-}
-putchar('\n');
-return (0);
+	for (d = '0'; d <= '9'; d++)
+	{
+		putchar(d);
+		if (d != '9')
+		{
+			putchar(',');
+			putchar(' ');
+		}
+	}
+	putchar('\n');
+
+	return (0);
 }
