@@ -1,28 +1,31 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 /**
- * main - Entry point
+ * main - represent Entry Point to the program
  *
- * Return: Always 0 (Success)
+ * Return: 0 to stop the program
  */
 int main(void)
 {
-	int d;
+int i;
+int j;
 
-	for (d = 0; d < 90; d++)
-	{
-		for ()
-		{
-			putchar((d / 10) + '0');
-			putchar((d % 10) + '0');
-		}
-		if (d != 89)
-		{
-			putchar(',');
-			putchar(' ');
-		}
-	}
-	putchar('\n');
-	return (0);
+for (i = 10; i <= 19; i++)
+{
+for (j = 10; j <= 19; j++)
+{
+if ((j % 10) > (i % 10))
+{
+putchar((i % 10) + '0');
+putchar((j % 10) + '0');
+if (i != 18 || j != 19)
+{
+putchar(',');
+putchar(' ');
+}
+}
+
+}
+}
+putchar('\n');
+return (0);
 }
