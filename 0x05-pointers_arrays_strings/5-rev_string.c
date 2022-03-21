@@ -26,7 +26,3 @@ void rev_string(char *s)
 		s[len1--] = tmp;
 	}
 }
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Secu
